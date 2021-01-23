@@ -19,8 +19,6 @@ public class BackGroundImageView extends View {
         super(context, attrs);
     }
 
-
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
