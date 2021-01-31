@@ -10,6 +10,6 @@ public class CrimsonLandActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new CrimsonGameView(this));
+        setContentView(new TestSurfaceView(this));
     }
 }
