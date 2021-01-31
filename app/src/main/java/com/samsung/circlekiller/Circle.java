@@ -30,6 +30,16 @@ public class Circle {
 
     }
 
+
+    /**
+     * Круги должна отталкиваться друг от друга
+     * )(
+     * */
+    public boolean hasConflictWith(Circle circle) {
+        // TODO: 23.01.2021 Написать реализацию
+        return false;
+    }
+
     public void update() {
 
         x += dx;

@@ -19,6 +19,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
 
     public GameView(Context context) {
         super(context);
+        holder = getHolder();
         init();
     }
 
@@ -28,7 +29,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
     }
 
     private void init() {
-        holder = getHolder();
         holder.addCallback(this);
         setOnTouchListener(this);
         gameThread = new GameThread(holder);
@@ -61,6 +61,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Vie
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         gameThread.addSpeed();
+        event.getX();
         gameThread.addNewCircle(60f, 60f);
         return false;
     }

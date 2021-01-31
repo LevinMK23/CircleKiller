@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CircleKiller">
         <activity android:name=".ImageActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CrimsonLandActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
